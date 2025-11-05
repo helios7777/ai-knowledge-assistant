@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.api.routes import router
+from app.mcp.server import mcp_router
 from app.config import settings
 
 app = FastAPI(
@@ -18,6 +19,7 @@ app.add_middleware(
 )
 
 app.include_router(router, prefix="/api/v1", tags=["API"])
+app.include_router(mcp_router, prefix="/api/v1", tags=["MCP"])
 
 if __name__ == "__main__":
     import uvicorn

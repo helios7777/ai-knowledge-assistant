@@ -1,0 +1,13 @@
+streamlit==1.32.0
+langchain==0.1.0
+langchain-community==0.0.10
+evidently==0.4.15
+psycopg2-binary==2.9.9
+sqlalchemy==2.0.25
+pyyaml==6.0.3
+plotly==5.18.0
+pandas==2.1.4
+textstat==0.7.3
+peft==0.7.1
+datasets==2.16.1
+accelerate==0.26.1
